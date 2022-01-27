@@ -1,0 +1,28 @@
+#navbar {
+    overflow: hidden; /* no overflow to the right */
+    padding: 20px 50px;
+    display: flex;
+    justify-content: flex-end; /* move all elements to the right */
+    align-items: center; /* move all elements to the center of column */
+    text-decoration: none;
+    font-size: 1em;
+    color: #333;
+    box-shadow: 0 1px 8px #ddd; 
+}
+
+
+#navbar span {
+    margin-right: auto; /* this is to move title to the left side */
+    font-size: 1.7em;
+}
+
+#navbar a {
+    color: #333;
+    text-decoration: none;
+    padding: 0 20px;
+    transition: all 0.5s ease 0s;
+}
+
+#navbar a:hover {
+    color: #888;
+}
