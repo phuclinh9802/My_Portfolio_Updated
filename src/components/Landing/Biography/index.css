@@ -1,0 +1,14 @@
+#Biography {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content {
+    padding: 50px;
+}
+
+img {
+    width: 70%;
+    height: auto;
+    padding-left: 22%;
+} 
