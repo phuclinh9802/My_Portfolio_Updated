@@ -1,0 +1,14 @@
+#Services {
+    display: block;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#title {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.cont {
+    margin: 10px;
+}
