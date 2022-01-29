@@ -10,5 +10,33 @@
 img {
     width: 70%;
     height: auto;
-    padding-left: 22%;
+    margin-left: 22%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px #ddd;
 } 
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* #social {
+    padding-top: 15px;
+} */
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px;
+    filter: grayscale(1);
+    transition: all 0.3s ease-in;
+}
+
+ul li:hover {
+    filter: grayscale(0);
+}

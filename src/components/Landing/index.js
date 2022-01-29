@@ -8,7 +8,7 @@ import './index.css';
 export default class Landing extends React.Component {
     render() {
         return (
-            <div>
+            <div id="Landing">
                 <Navbar/>
                 <Biography />
                 {/* <Services />
