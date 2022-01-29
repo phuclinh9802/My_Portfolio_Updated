@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Navbar from './Navbar/index';
 import Biography from './Biography/index';
+import Services from './Services/index';
 
 import './index.css';
 
@@ -11,8 +12,8 @@ export default class Landing extends React.Component {
             <div id="Landing">
                 <Navbar/>
                 <Biography />
-                {/* <Services />
-                <Portfolio />
+                <Services />
+                {/* <Portfolio />
                 <Contact /> */}
                 <footer>
                     
