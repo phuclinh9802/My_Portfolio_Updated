@@ -13,6 +13,7 @@ export default function Biography() {
     ]
     return (
         <div id="Biography">
+            <div></div>
             <div class="content" id="img">
                 <img src={avatar} alt="My Image"/> 
             </div>
@@ -45,7 +46,7 @@ export default function Biography() {
                         
                     </div>
                 </div>
-                
+                <div></div>
             </div>
         </div>
     );
