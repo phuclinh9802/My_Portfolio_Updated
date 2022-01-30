@@ -15,7 +15,7 @@ export default function Services() {
                         WHAT I DO
                 </div>
                 <div class="cont" id="subtitle">
-                    The services I offer
+                    These are the services that I offer
                 </div>
                 <div class="cont" id="grid">
                     <div class="grid-item">
@@ -29,7 +29,7 @@ export default function Services() {
                     <div class="grid-item">
                         <img src={app} alt="App Development"/>
                         <h3>App Development</h3>
-                        <p>Building windows/iOS application using Python, Selenium
+                        <p>Building Windows/iOS application using Python, Selenium
                             and Tkinter </p>
                     </div>
                     <div class="grid-item">

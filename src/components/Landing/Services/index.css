@@ -34,6 +34,6 @@
     padding: 20px;
 }
 
-.grid-item p {
+.grid-item p, #subtitle {
     color: #777;
 }
