@@ -2,8 +2,12 @@
     display: block;
     text-align: center;
     padding: 50px 0;
+    height: 500px;
 }
 
+#wrap {
+    height: 100%;
+}
 #title {
     font-size: 2em;
     font-weight: 600;
@@ -11,4 +15,25 @@
 
 .cont {
     margin: 10px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 5%;
+}
+
+.grid-item {
+    padding: 10px;
+}
+.grid-item img {
+    width: 20%;
+}
+
+.grid-item h3 {
+    padding: 20px;
+}
+
+.grid-item p {
+    color: #777;
 }
