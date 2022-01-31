@@ -1,4 +1,4 @@
-export const Portfolio = [
+const Portfolio = [
     {
         id: 1,
         title: 'COVID-19 World Tracker',
@@ -20,6 +20,8 @@ export const Portfolio = [
     }, 
     
 ] 
+
+export default Portfolio;
 
 
 // Portfolio information
