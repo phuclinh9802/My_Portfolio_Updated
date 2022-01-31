@@ -8,12 +8,12 @@ export default function Navbar() {
     return (
         <div id="navbar">
             <span id="title">
-                <Link to="/">Phillip</Link>
+                {/* <Link to="/">Phillip</Link> */}
             </span>
-            <Link to="/">Home</Link>
+            {/* <Link to="/">Home</Link>
             <Link to="/services">Services</Link>
             <Link to="/portfolio">Portfolio</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Contact</Link> */}
         </div>
     );
 }

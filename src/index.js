@@ -4,9 +4,28 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+import {
+  BrowserRouter as Router, 
+  Routes, 
+  Route
+} from 'react-router-dom';
+import Biography from './components/Landing/Biography';
+import Services from './components/Landing/Services';
+import Portfolio from './components/Landing/Portfolio';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+      {/* <Routes>
+      <Route path="/" element={<Biography />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes> */}
+  </Router>
+   
   </React.StrictMode>,
   document.getElementById('root')
 );
