@@ -18,12 +18,12 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <App />
-      {/* <Routes>
-      <Route path="/" element={<Biography />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/portfolio" element={<Portfolio />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes> */}
+      <Routes>
+      <Route path="/" element={Biography} />
+      <Route path="/services" element={Services} />
+      <Route path="/portfolio" element={Portfolio} />
+      {/* <Route path="/contact" element={<Contact />} /> */}
+    </Routes>
   </Router>
    
   </React.StrictMode>,
