@@ -19,30 +19,33 @@ export default function Biography() {
             </div>
             <div class="content">
                 <div class="bio">
-                    <h1 id="header">
-                        I am Phillip, a developer and graduate student from Vietnam 
-                    </h1>
-                    <div id="description"> 
-                        From a mathematics/computing background, I always have passion with problem solving and collabrating 
-                        with people, especially when it comes to web and software development. My goal is to improve every
-                        single day, to trust the process, and to land my dream job as a software developer. 
+                    <div id="content-header">
+                        <h1 id="header">
+                            I am Phillip, a developer and graduate student from Vietnam 
+                        </h1>
+                        <div id="description"> 
+                            From a mathematics/computing background, I always have passion with problem solving and collabrating 
+                            with people, especially when it comes to web and software development. My goal is to improve every
+                            single day, to trust the process, and to land my dream job as a software developer. 
+                        </div>
                     </div>
+                    
                     <div id="social">
-                        {social ? 
-                            <ul>
+                        <ul>
+                        {social.map((s) =>  
                                 <li>
-                                    <SocialIcon style={{width: "40px", height: "40px", }} url={social[0].url}/>
+                                    <SocialIcon style={{width: "40px", height: "40px" }} url={s.url}/>
                                 </li>
-                                <li>
-                                    <SocialIcon style={{width: "40px", height: "40px",}} url={social[1].url}/>
-                                </li>
-                                <li>
-                                    <SocialIcon style={{width: "40px", height: "40px",}} url={social[2].url}/>
-                                </li>
-
-                            </ul>
-                        : null 
+                                // <li>
+                                //     <SocialIcon style={{width: "40px", height: "40px",}} url={social[1].url}/>
+                                // </li>
+                                // <li>
+                                //     <SocialIcon style={{width: "40px", height: "40px",}} url={social[2].url}/>
+                                // </li>
+                            )
                         } 
+                        </ul>
+
                         
                     </div>
                 </div>

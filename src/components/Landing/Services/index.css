@@ -3,6 +3,7 @@
     text-align: center;
     padding: 50px 0;
     height: auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 #wrap {
@@ -10,11 +11,15 @@
 }
 #title {
     font-size: 2em;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .cont {
     margin: 10px;
+}
+
+.icon {
+    padding: 10px;
 }
 
 #grid {
