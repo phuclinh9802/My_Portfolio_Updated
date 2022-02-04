@@ -1,4 +1,5 @@
 import React, { Component, useState } from 'react';
+import { db } from "../../firebase";
 
 import './index.css'
 
@@ -9,7 +10,18 @@ export default function Contact() {
     const [message, setMessage] = useState('');
 
     const handleSubmit = (e) => {
+        e.preventDefault();
 
+        db.collection('contacts').add({
+            name: name,
+            email: email,
+            message: message
+        })
+        .then(() => {
+            alert('Message has been submitted! Thank you.')
+        }).catch(error => {
+            alert(error.message);
+        })
     }
 
     return (
