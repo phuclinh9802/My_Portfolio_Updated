@@ -4,6 +4,7 @@ import Navbar from './Navbar/index';
 import Biography from './Biography/index';
 import Services from './Services/index';
 import Portfolio from './Portfolio/index';
+import Contact from './Contact';
 
 import './index.css';
 
@@ -15,7 +16,7 @@ export default class Landing extends React.Component {
                 <Biography />
                 <Services />
                 <Portfolio />
-                {/* <Contact /> */}
+                <Contact />
                 <footer>
                     
                 </footer>
