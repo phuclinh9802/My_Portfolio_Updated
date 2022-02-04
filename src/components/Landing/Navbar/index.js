@@ -14,6 +14,7 @@ export default function Navbar() {
             <HashLink smooth to="#Biography">Home</HashLink>
             <HashLink smooth to="#Services">Services</HashLink>
             <HashLink smooth to="#Portfolio">Portfolio</HashLink>
+            <HashLink smooth to="#Contact">Contact</HashLink>
             {/* <Link to="/contact">Contact</Link> */}
         </div>
     );

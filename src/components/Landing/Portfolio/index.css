@@ -69,6 +69,10 @@
     -webkit-filter: brightness(100%);
 }
 
+.item .a_hidden {
+    display: none;
+}
+
 .item a:hover{
     cursor: pointer;
     /* opacity: 1; */
@@ -78,4 +82,35 @@
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #grid-group {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #grid-group {
+        grid-template-columns: auto;
+    }
+
+    .item .a_hidden {
+        display: inline-block;
+        text-decoration: none;
+        color: #777;
+        transition: all 0.5s ease;
+    }
+
+    .item img {
+        display: none;
+    }
+
+    .item .a_hidden {
+        color: #555;
+        
+    }
+
+
 }

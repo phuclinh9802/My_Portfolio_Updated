@@ -21,6 +21,7 @@ export default function Portfolio() {
                             <div class="item-desc">
                                 <h4>{d.title}</h4>
                                 <p>{d.description}</p>
+                                <a href={d.link} class="a_hidden">Learn more</a>
                             </div>
                             
                         </div>

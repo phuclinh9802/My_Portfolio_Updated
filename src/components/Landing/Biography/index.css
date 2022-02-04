@@ -48,3 +48,48 @@ ul li {
 ul li:hover {
     filter: grayscale(0);
 }
+
+
+@media screen and (max-width: 1024px) {
+    #Biography {
+        display: block;
+        text-align: center;
+    }
+
+    img {
+        width: 30%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 3px 3px 2px #ddd;
+    } 
+    ul {
+        justify-content: center;
+        /* padding-right: 10px; */
+    }
+    .bio, #content-header {
+        margin: 10px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    #Biography {
+        display: block;
+        text-align: center;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .bio, #content-header {
+        margin: 10px;
+    }
+
+    img {
+        display: none;
+    }
+    ul {
+        justify-content: center;
+        /* padding-right: 10px; */
+    }
+}

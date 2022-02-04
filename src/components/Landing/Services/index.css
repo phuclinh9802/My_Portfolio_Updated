@@ -42,3 +42,10 @@
 .grid-item p, #subtitle {
     color: #777;
 }
+
+@media screen and (max-width: 768px) {
+    #grid {
+        grid-template-columns: 1fr;
+    }
+
+}
