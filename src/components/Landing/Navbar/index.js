@@ -9,9 +9,9 @@ export default function Navbar() {
     return (
         <div id="navbar">
             <span id="title">
-                <HashLink smooth to="/">Phillip</HashLink>
+                <HashLink smooth to="#Biography">Phillip</HashLink>
             </span>
-            <HashLink smooth to="/">Home</HashLink>
+            <HashLink smooth to="#Biography">Home</HashLink>
             <HashLink smooth to="#Services">Services</HashLink>
             <HashLink smooth to="#Portfolio">Portfolio</HashLink>
             {/* <Link to="/contact">Contact</Link> */}

@@ -10,6 +10,9 @@
     box-shadow: 0 1px 8px #ddd; 
     background: #fff;
     font-family: 'Roboto', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 

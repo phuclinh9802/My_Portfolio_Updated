@@ -42,6 +42,7 @@ ul li {
     margin: 10px;
     filter: grayscale(1);
     transition: all 0.3s ease-in;
+    
 }
 
 ul li:hover {
