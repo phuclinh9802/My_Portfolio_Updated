@@ -27,12 +27,13 @@ export default function Contact() {
     return (
         <div id="Contact">
             <div class="wrap-contact">
-                <div class="inside-contact">
+                <div class="inside-contact" id="title-contact">
                     <h3>GET IN TOUCH</h3>
                     <p>I am happy to connect with you. Feel free to send me a message in the form below, preferably related to software development jobs</p>
                 </div>
                 <div class="inside-contact">
                     <div class="form">
+                        <div class="form-item"></div>
                         <div class="form-item">
                             <form id="contact-form" onSubmit={handleSubmit} method="POST">
                                 <div class="form-group">
@@ -51,7 +52,6 @@ export default function Contact() {
                             </form>
                         </div>
                         <div class="form-item">
-
                         </div>
                     </div>
                 </div>

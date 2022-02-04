@@ -9,4 +9,19 @@
 #Landing {
     height: auto;
     background: #f2f2f2;
+    
+}
+
+
+footer {
+    display: flex;
+    padding: 10px 0;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    background: #555;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    color: #f2f2f2;
+
 }

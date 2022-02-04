@@ -18,7 +18,7 @@ export default class Landing extends React.Component {
                 <Portfolio />
                 <Contact />
                 <footer>
-                    
+                    Copyright &copy; 2022 by Phillip Nguyen. All Rights Reserved.
                 </footer>
             </div>
         );
