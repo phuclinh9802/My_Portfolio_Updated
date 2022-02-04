@@ -14,7 +14,10 @@ export default function Portfolio() {
                 <div class="inside-wrap" id="grid-group">
                     {data.map((d) => 
                         <div class="item">
+                           <a href={d.link} class="project_link">
                             <img src={d.img} alt={d.title}/>
+                           </a>
+                           
                             <div class="item-desc">
                                 <h4>{d.title}</h4>
                                 <p>{d.description}</p>
