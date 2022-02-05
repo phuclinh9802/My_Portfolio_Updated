@@ -3,6 +3,8 @@
     grid-template-columns: 100px 1fr 1fr 100px;
     grid-gap: 50px;
     font-family: 'Roboto', sans-serif;
+    scroll-margin-top: 100px;
+
 }
 
 .content {

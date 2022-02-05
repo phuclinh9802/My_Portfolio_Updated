@@ -3,6 +3,7 @@
     padding: 10px 0;
     height: auto;
     font-family: 'Roboto', sans-serif;
+    scroll-margin-top: 100px;
 }
 
 .wrapper {
@@ -99,7 +100,7 @@
     .item .a_hidden {
         display: inline-block;
         text-decoration: none;
-        color: #777;
+        color: #888;
         transition: all 0.5s ease;
     }
 
@@ -107,7 +108,7 @@
         display: none;
     }
 
-    .item .a_hidden {
+    .item .a_hidden:hover {
         color: #555;
         
     }

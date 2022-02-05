@@ -1,4 +1,4 @@
-#navbar {
+#navbar .topnav {
     overflow: hidden; /* no overflow to the right */
     padding: 20px 50px;
     display: flex;
@@ -16,7 +16,7 @@
 }
 
 
-#navbar span {
+#navbar span#title {
     margin-right: auto; /* this is to move title to the left side */
     font-size: 1.7em;
 }
@@ -30,4 +30,27 @@
 
 #navbar a:hover {
     color: #888;
+}
+
+#navbar a#icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #navbar .topnav {
+        margin: auto;
+        padding: 20px 5px;
+        background: #555;
+        color: #f2f2f2;
+    }
+
+    #navbar #my-links {
+        display: none;
+    }
+
+    #navbar a#icon {
+        display: inline-block;
+    }
+
+
 }
