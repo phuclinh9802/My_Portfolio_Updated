@@ -4,6 +4,8 @@ import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'; 
 
+import { Spin as Hamburger } from 'hamburger-react';
+
 // import css file for styling
 import './index.css';
 
@@ -33,14 +35,19 @@ export default function Navbar() {
                 </span>
                 
             </span>
-            <a id="icon"  onClick={() => setisClicked(!isClicked)}>
-                <FontAwesomeIcon color="#333" icon={faBars} size="2x"/>
-            </a>
+            <div id="icon">
+                {/* <FontAwesomeIcon color="#333" icon={faBars} size="2x"/> */}
+                <Hamburger 
+                    toggled={isClicked} 
+                    toggle={setisClicked}
+                    duration={0.5}    
+                />
+
+            </div>
             </div>
 
             <style jsx>
                 {`
-                    
                     #icon {
                         display: none;
                     }
@@ -56,7 +63,7 @@ export default function Navbar() {
                         #navbar #my-links {
                             display: ${isClicked ? 'flex': 'none'};
                             flex-direction: column;
-                            justify-content: center;
+                            justify-content: space-evenly;
                             align-items: center;
                             height: 40vh;
                             width: 50vw;
@@ -65,18 +72,34 @@ export default function Navbar() {
 
                         .hashlink {
                             margin: 20px;
+                            border-bottom: 1px dashed #333;
                         }
                         #icon {
                             display: inline;
                             z-index: 100;
                             align-self: flex-start;
                             text-align: center;
+                            padding-left: 20px;
                         }
 
-                        #title {
-                            
+                        #navbar a:hover {
+                            color: #777;
+        
                         }
                     }
+                    @media screen and (max-width: 500px) {
+                        #title a{
+                            display: ${isClicked ? 'none': 'inline'};
+                        }
+
+                        #navbar .topnav {
+                            
+                            grid-template-columns:  1fr 2fr 1fr;
+                            padding: 10px;
+                            transition: height 0.5s linear;
+                        }
+                    }
+
                 `}
             </style>
             
