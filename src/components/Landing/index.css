@@ -23,6 +23,10 @@ footer {
     align-items: center;
     justify-content: center;
     color: #f2f2f2;
-
 }
 
+@media screen and (max-width: 500px) {
+    footer {
+        font-size: 0.9em;
+    }
+}
