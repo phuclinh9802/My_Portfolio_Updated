@@ -61,3 +61,15 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+@media screen and (max-width: 768px) {
+    .form {
+        grid-template-columns: 50px 2fr 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form {
+        grid-template-columns: 10px 1fr 10px;
+    }
+}
