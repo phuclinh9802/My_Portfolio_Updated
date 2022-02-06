@@ -10,25 +10,6 @@ import './index.css';
 export default function Navbar() {
 
     const [isClicked, setisClicked] = useState(false);
-    const [display, setDisplay] = useState('none');
-    // const myLinks = useRef(null);
-
-    var link = document.getElementById('my-links');
-    // let cssProp = {};
-    // cssProp['--display-block'] = "block";
-
-    // myLinks.current;
-
-    // if (isClicked) {
-    //     // setDisplay('block')
-    //     this.ref
-        
-    // }
-    // else {
-    //     // link.style.display = "none";
-    // }
-
-    
     
     return (
         <div id="navbar">
@@ -56,9 +37,52 @@ export default function Navbar() {
                 <FontAwesomeIcon color="#333" icon={faBars} size="2x"/>
             </a>
             </div>
+
+            <style jsx>
+                {`
+                    
+                    #icon {
+                        display: none;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        #navbar .topnav {
+                            display: ${isClicked ? 'grid': 'flex'};
+                            grid-gap: 30px;
+                            grid-template-columns: 1fr 3fr 1fr;
+                            padding: 10px;
+                            transition: height 0.5s linear;
+                        }
+                        #navbar #my-links {
+                            display: ${isClicked ? 'flex': 'none'};
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            height: 40vh;
+                            width: 50vw;
+                            position: relative;
+                        }
+
+                        .hashlink {
+                            margin: 20px;
+                        }
+                        #icon {
+                            display: inline;
+                            z-index: 100;
+                            align-self: flex-start;
+                            text-align: center;
+                        }
+
+                        #title {
+                            
+                        }
+                    }
+                `}
+            </style>
             
             
             
         </div>
     );
 }
+

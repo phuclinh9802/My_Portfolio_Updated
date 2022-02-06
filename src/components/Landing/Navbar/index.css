@@ -30,27 +30,28 @@
 
 #navbar a:hover {
     color: #888;
+    cursor: pointer;
 }
 
-#navbar a#icon {
+/* #navbar a#icon {
     display: none;
-}
+} */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     #navbar .topnav {
         margin: auto;
         padding: 20px 5px;
         background: #555;
         color: #f2f2f2;
-    }
+    } */
 
-    #navbar #my-links {
+    /* #navbar #my-links {
         display: none;
     }
 
     #navbar a#icon {
         display: inline-block;
-    }
+    } */
 
 
-}
+/* } */
