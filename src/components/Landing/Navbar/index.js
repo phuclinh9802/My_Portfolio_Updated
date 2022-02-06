@@ -53,11 +53,13 @@ export default function Navbar() {
                     }
 
                     @media screen and (max-width: 600px) {
+                        #navbar {
+                            padding: 10px;
+                        }
                         #navbar .topnav {
                             display: ${isClicked ? 'grid': 'flex'};
                             grid-gap: 30px;
                             grid-template-columns: 1fr 3fr 1fr;
-                            padding: 10px;
                             transition: height 0.5s linear;
                         }
                         #navbar #my-links {
@@ -93,9 +95,7 @@ export default function Navbar() {
                         }
 
                         #navbar .topnav {
-                            
                             grid-template-columns:  1fr 2fr 1fr;
-                            padding: 10px;
                             transition: height 0.5s linear;
                         }
                     }

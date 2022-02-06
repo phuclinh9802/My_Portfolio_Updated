@@ -1,20 +1,22 @@
-#navbar .topnav {
+#navbar {
     overflow: hidden; /* no overflow to the right */
     padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd; 
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.topnav {
     display: flex;
     justify-content: flex-end; /* move all elements to the right */
     align-items: center; /* move all elements to the center of column */
     text-decoration: none;
     font-size: 1em;
     color: #333;
-    box-shadow: 0 1px 8px #ddd; 
-    background: #fff;
-    font-family: 'Roboto', sans-serif;
-    position: sticky;
-    top: 0;
-    z-index: 1;
 }
-
 
 #navbar span#title {
     margin-right: auto; /* this is to move title to the left side */
