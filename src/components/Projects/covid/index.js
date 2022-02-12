@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 
 
-export default function Covid() {
-    return (
-        <div>
+class Covid extends React.Component {
+    render() {
+        return (
+            <div>
+                Hello, I'm CV
+            </div>
+        );
+    }
 
-        </div>
-    );
 }
+
+export default Covid;
