@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-export default function covid() {
+export default function Covid() {
     return (
         <div>
 

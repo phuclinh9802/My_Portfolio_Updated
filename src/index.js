@@ -10,18 +10,22 @@ import {
   Routes, 
   Route
 } from 'react-router-dom';
-import Biography from './components/Landing/Biography';
-import Services from './components/Landing/Services';
-import Portfolio from './components/Landing/Portfolio';
+import Covid from './components/Projects/Covid';
+import automating_excel from './components/Projects/automate_excel';
+import cc from './components/Projects/cc';
+
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <App />
       <Routes>
-      <Route path="/" element={Biography} />
+        <Route path="/covid-project" element={Covid}/>
+        <Route path="/cc-project" element={cc}/>
+        <Route path="/automate-project" element={automating_excel}/>
+      {/* <Route path="/" element={Biography} />
       <Route path="/services" element={Services} />
-      <Route path="/portfolio" element={Portfolio} />
+      <Route path="/portfolio" element={Portfolio} /> */}
       {/* <Route path="/contact" element={<Contact />} /> */}
     </Routes>
   </Router>
