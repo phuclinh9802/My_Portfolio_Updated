@@ -11,8 +11,11 @@
 ### Contact
 
 ## Firebase Deployment
-```firebase login```
-```firebase init``` 
+### Install Firebase npm
+- ```npm install -g firebase-tools```
+### Steps to deploy
+- ```firebase login```
+- ```firebase init``` 
 - Choose: ```Hosting```
 - Find the project
 - ```What do you want to use aas your public directory? build```

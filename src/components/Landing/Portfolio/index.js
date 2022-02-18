@@ -4,7 +4,6 @@ import { BrowserRouter as Redirect, Routes, Router, Route } from 'react-router-d
 import data from '../../../data/data';
 import CellCollective from '../../Projects/CellCollective';
 import AutomateExcel from '../../Projects/AutomateExcel';
-// import cc from '../../Projects/CellCollective';
 import Covid from '../../Projects/Covid';
 
 import './index.css';
@@ -21,7 +20,7 @@ export default function Portfolio() {
                 <div class="inside-wrap" id="grid-group">
                     {data.map((d) =>
                         <div class="item">
-                            <Link to={`${d.router}`}>
+                            <Link to={`/Portfolio/${d.router}`}>
                                 <a href="" class="project_link">
                                     <img src={d.img} alt={d.title} />
                                 </a>
@@ -38,11 +37,11 @@ export default function Portfolio() {
                     }
                 </div>
             </div>
-            <Routes>
+            {/* <Routes>
                 <Route exact path="covid-project" element={<Covid />} />
                 <Route exact path="cc-project" element={<CellCollective />} />
                 <Route path="automate-project" element={<AutomateExcel />} />
-            </Routes>
+            </Routes> */}
         </div>
         // </Router>
 
