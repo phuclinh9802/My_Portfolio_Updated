@@ -11,3 +11,11 @@
 ### Contact
 
 
+```firebase login```
+```firebase init``` 
+- Choose: ```Hosting```
+- Find the project
+- ```What do you want to use aas your public directory? build```
+- ```Configure as a single-page app (rewrite all urls to /index.html)? (y/N) y```
+- ```npm run build```
+- ```firebase deploy```
