@@ -10,7 +10,7 @@
 
 ### Contact
 
-
+## Firebase Deployment
 ```firebase login```
 ```firebase init``` 
 - Choose: ```Hosting```
