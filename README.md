@@ -4,9 +4,9 @@
 1. Biography
 2. Services
 3. Projects (New sections based on # of projects)
-- CellCollective
-- Covid Tracker
-- Automating Excel
+    - CellCollective
+    - Covid Tracker
+    - Automating Excel
 
 4. Contact
 
