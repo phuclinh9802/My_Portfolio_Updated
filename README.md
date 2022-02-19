@@ -1,20 +1,16 @@
 # My Updated Portfolio
 - Using React JS, Firebase
 ## Sections
-### Bibliography
-### Services
-### Projects (New sections based on # of projects)
+1. Biography
+2. Services
+3. Projects (New sections based on # of projects)
 - CellCollective
 - Covid Tracker
 - Automating Excel
 
-### Contact
+4. Contact
 
-## Firebase Deployment
-### Install Firebase npm
-- ```npm install -g firebase-tools```
-
-### Notes during development
+## Notes during development
 - Dividing components into:
     - Landing
         - Navbar
@@ -25,6 +21,10 @@
     - Portfolio
 
 - Using `framer-motion` package to animate between routes  
+
+## Firebase Deployment
+### Install Firebase npm
+- ```npm install -g firebase-tools```
 
 ### Steps to deploy
 - ```firebase login```
