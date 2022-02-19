@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
-class Covid extends React.Component {
-    render() {
-        return (
-            <div>
-                Hello, I'm CV
-            </div>
-        );
-    }
+export default function Covid() {
+
+
+    return (
+        <div>
+            Hello, I'm CV
+        </div>
+    );
+
 
 }
 
-export default Covid;

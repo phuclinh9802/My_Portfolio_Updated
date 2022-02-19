@@ -13,6 +13,19 @@
 ## Firebase Deployment
 ### Install Firebase npm
 - ```npm install -g firebase-tools```
+
+### Notes during development
+- Dividing components into:
+    - Landing
+        - Navbar
+        - Biography
+        - Services
+        - Projects
+        - Contact
+    - Portfolio
+
+- Using `framer-motion` package to animate between routes  
+
 ### Steps to deploy
 - ```firebase login```
 - ```firebase init``` 

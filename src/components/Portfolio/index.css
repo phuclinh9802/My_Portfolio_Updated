@@ -1,9 +1,10 @@
 #Portfolio {
     display: block;
     padding: 10px 0;
-    height: auto;
+    height: 100vh;
     font-family: 'Roboto', sans-serif;
     scroll-margin-top: 100px;
+    background: #f2f2f2;
 }
 
 .wrapper {

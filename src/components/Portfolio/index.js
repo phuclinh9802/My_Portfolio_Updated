@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { BrowserRouter as Redirect, Routes, Router, Route } from 'react-router-dom';
-import data from '../../../data/data';
-import CellCollective from '../../Projects/CellCollective';
-import AutomateExcel from '../../Projects/AutomateExcel';
-import Covid from '../../Projects/Covid';
+import data from '../../data/data';
+import CellCollective from '../Projects/CellCollective';
+import AutomateExcel from '../Projects/AutomateExcel';
+import Covid from '../Projects/Covid';
 
 import './index.css';
 
-import AnimatedPage from '../../AnimatedPage';
+import AnimatedPage from '../AnimatedPage';
 
 export default function Portfolio() {
     return (
-        <AnimatedPage>
-            <div id="Portfolio">
+        <div id="Portfolio">
+            <AnimatedPage>
                 <div className="wrapper">
                     <div className="inside-wrap" id="title-port">
                         <h3>PORTFOLIO</h3>
@@ -22,7 +22,8 @@ export default function Portfolio() {
                     <div className="inside-wrap" id="grid-group">
                         {data.map((d) =>
                             <div key={d.title} className="item">
-                                <Link to={`/Portfolio/${d.router}`}>
+                                <Link to={`${d.router}`}>
+                                    {/* <Link to="/Portfolio"> */}
                                     <a href="" className="project_link">
                                         <img src={d.img} alt={d.title} />
                                     </a>
@@ -38,15 +39,17 @@ export default function Portfolio() {
                         )
                         }
                     </div>
+                    <Routes>
+                        {/* no need to add /Portfolio before any path, since that will navigate to a blank page */}
+                        <Route path="/covid-project" element={<Covid />} />
+                        <Route path="/cc-project" element={<CellCollective />} />
+                        <Route path="/automate-project" element={<AutomateExcel />} />
+                    </Routes>
                 </div>
-                {/* <Routes>
-                <Route exact path="covid-project" element={<Covid />} />
-                <Route exact path="cc-project" element={<CellCollective />} />
-                <Route path="automate-project" element={<AutomateExcel />} />
-            </Routes> */}
-            </div>
+            </AnimatedPage>
 
-        </AnimatedPage>
+        </div>
+
 
     );
 }
