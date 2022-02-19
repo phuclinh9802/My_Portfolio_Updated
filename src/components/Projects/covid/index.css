@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+
+.Covid {
+    display: block; 
+    padding: 50px 0;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    scroll-margin-top: 100px;
+}
+
+.covid-wrapper {
+    padding: 0 20px;
+}
+
+.title-covid {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.title-covid h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.description-covid {
+    text-align: center;
+}
+
+.title-covid p {
+    color: #777;
+}
+
+.sw {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+
+.sw li img.programming {
+    width: 100px;
+    height: auto;
+    box-shadow: none;
+}
