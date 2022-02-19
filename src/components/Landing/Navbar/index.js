@@ -49,28 +49,28 @@ export default function Navbar() {
 
     return (
         <div id="navbar" >
-            <div class="topnav">
+            <div className="topnav">
                 <span id="title">
                     <Link to="/" onClick={() => {
                         setClicked(false)
                     }} > Phillip</Link>
                 </span>
                 <span id="my-links ">
-                    <span class="hashlink">
+                    <span className="hashlink">
                         <Link to="/" onClick={() => {
                             setClicked(false)
                         }} > Home</Link>
 
                     </span>
-                    <span class="hashlink services" >
+                    <span className="hashlink services" >
                         <HashLink smooth to="#Services">Services</HashLink>
                     </span>
-                    <span class="hashlink">
+                    <span className="hashlink">
                         <Link to="/Portfolio" onClick={() => {
                             setClicked(true)
                         }}>Portfolio</Link>
                     </span>
-                    <span class="hashlink contact" >
+                    <span className="hashlink contact" >
                         <HashLink smooth to="#Contact">Contact</HashLink>
                     </span>
 
@@ -86,7 +86,7 @@ export default function Navbar() {
                 </div>
             </div>
 
-            <style jsx>
+            <style jsx="true">
                 {`
                     #icon {
                         display: none;

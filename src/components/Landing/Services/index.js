@@ -14,46 +14,46 @@ export default function Services() {
     return (
         <div id="Services">
             <div id="wrap">
-                <div class="cont" id="title">
-                        WHAT I DO
+                <div className="cont" id="title">
+                    WHAT I DO
                 </div>
-                <div class="cont" id="subtitle">
+                <div className="cont" id="subtitle">
                     These are the services that I offer
                 </div>
-                <div class="cont" id="grid">
-                    <div class="grid-item">
+                <div className="cont" id="grid">
+                    <div className="grid-item">
                         {/* <<img src={web} alt="Web Development"/>> */}
-                        <span class="icon">
-                            <FontAwesomeIcon color="#669dd1" icon={faWindowRestore} size="4x"/>
+                        <span className="icon">
+                            <FontAwesomeIcon color="#669dd1" icon={faWindowRestore} size="4x" />
                         </span>
                         <h3>Web Development</h3>
                         <p>Several experiences with full-stack
-                            web development using React, Angular as 
+                            web development using React, Angular as
                             Front-end, and C#, Javascript, Node.JS as Back-end
                         </p>
                     </div>
-                    <div class="grid-item">
+                    <div className="grid-item">
                         {/* <img src={app} alt="App Development"/> */}
-                        <span class="icon">
-                            <FontAwesomeIcon color="#d9a778" icon={faLaptopCode} size="4x"/>
+                        <span className="icon">
+                            <FontAwesomeIcon color="#d9a778" icon={faLaptopCode} size="4x" />
                         </span>
                         <h3>App Development</h3>
                         <p>Building Windows/iOS application using Python, Selenium
                             and Tkinter </p>
                     </div>
-                    <div class="grid-item">
+                    <div className="grid-item">
                         {/* <img src={teamwork} alt="Teamwork"/> */}
-                        <span class="icon">
-                            <FontAwesomeIcon color="#6bb58d" icon={faUsers} size="4x"/>
+                        <span className="icon">
+                            <FontAwesomeIcon color="#6bb58d" icon={faUsers} size="4x" />
                         </span>
                         <h3>Teamwork</h3>
-                        <p>Ability to collaborate with people to come up with 
+                        <p>Ability to collaborate with people to come up with
                             the best ideas and solutions to manage/solve problems
                         </p>
                     </div>
                 </div>
             </div>
-                
+
 
         </div>
     );
