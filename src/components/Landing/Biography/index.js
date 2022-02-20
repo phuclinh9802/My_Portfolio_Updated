@@ -9,7 +9,8 @@ export default function Biography() {
     const social = [
         { name: 'Facebook', url: "https://www.facebook.com/phillip.nguyen.2901/" },
         { name: 'Instagram', url: "https://www.instagram.com/philnguyen2901/" },
-        { name: 'LinkedIn', url: "https://www.linkedin.com/in/philswe/" }
+        { name: 'LinkedIn', url: "https://www.linkedin.com/in/philswe/" },
+        { name: 'GitHub', url: "https://www.github.com/phuclinh9802" }
     ]
     return (
         <div id="Biography">

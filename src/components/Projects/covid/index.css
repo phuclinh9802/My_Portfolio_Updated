@@ -51,3 +51,62 @@
     height: auto;
     box-shadow: none;
 }
+
+.diagram h3, .diagram h4{
+    padding: 20px 0;
+}
+
+.diagram .blueprint {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    padding: 20px;
+}
+.diagram img {
+    width: 50%;
+}
+
+
+.bp-content {
+    padding: 0 30px;
+}
+.bp-list {
+    display: grid;
+    list-style-type: disc;
+}
+
+.bp-list ul{
+    display: grid;
+    list-style-type: circle;
+}
+
+.bp-list ul ul {
+    list-style-type: lower-alpha;
+    padding-left: 20px;
+}
+
+.bp-dashboard {
+    padding: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.bp-dashboard img {
+    width: 30%;
+}
+
+.covid-app {
+    padding: 20px 0;
+}
+
+.covid-dashboard {
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    place-items: center;
+    padding: 30px 0;
+}
+
+.covid-dashboard img {
+    width: 100%;
+}

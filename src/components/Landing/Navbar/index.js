@@ -53,9 +53,9 @@ export default function Navbar() {
                 <span id="title">
                     <Link to="/" onClick={() => {
                         setClicked(false)
-                    }} > Phillip</Link>
+                    }} > Phillip("Nguyen");</Link>
                 </span>
-                <span id="my-links ">
+                <span id="my-links">
                     <span className="hashlink">
                         <Link to="/" onClick={() => {
                             setClicked(false)
@@ -92,7 +92,7 @@ export default function Navbar() {
                         display: none;
                     }
 
-                    @media screen and (max-width: 600px) {
+                    @media screen and (max-width: 768px) {
                         #navbar {
                             padding: 10px;
                         }
@@ -120,7 +120,7 @@ export default function Navbar() {
                             display: inline;
                             z-index: 100;
                             align-self: flex-start;
-                            text-align: center;
+                            justify-self: flex-end;
                             padding-left: 20px;
                         }
 
@@ -129,7 +129,7 @@ export default function Navbar() {
         
                         }
                     }
-                    @media screen and (max-width: 500px) {
+                    @media screen and (max-width: 768px) {
                         #title a{
                             display: ${isClicked ? 'none' : 'inline'};
                         }

@@ -20,7 +20,7 @@ function App() {
         <Routes key={location.pathname.split('/')[1]} location={location}>
           <Route exact path="/" element={<Landing />} />
 
-          <Route path="/Portfolio/*" element={<Portfolio />} /> {/* use /Portfolio/* to navigate to any nested route available  */}
+          <Route exact path="/Portfolio/*" element={<Portfolio />} /> {/* use /Portfolio/* to navigate to any nested route available  */}
           {/* <Route path="/Portfolio/covid-project" element={<Covid />} />
 
           <Route path="/Portfolio/cc" element={<CellCollective />} />

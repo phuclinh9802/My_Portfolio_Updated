@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Link, Outlet } from 'react-router-dom';
-import { BrowserRouter as Redirect, Routes, Router, Route } from 'react-router-dom';
+import React, { Component, useState } from 'react';
+import { Link, Outlet, } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Navigate, Route } from 'react-router-dom';
 import data from '../../data/data';
 import CellCollective from '../Projects/CellCollective';
 import AutomateExcel from '../Projects/AutomateExcel';
@@ -11,6 +11,8 @@ import './index.css';
 import AnimatedPage from '../AnimatedPage';
 
 export default function Portfolio() {
+    const [isTrue, setTrue] = useState(true);
+
     return (
         <div id="Portfolio">
             <AnimatedPage>
@@ -41,7 +43,8 @@ export default function Portfolio() {
                     </div>
                     <Routes>
                         {/* no need to add /Portfolio before any path, since that will navigate to a blank page */}
-                        <Route path="/covid-project" element={<Covid />} />
+                        <Route path="/" element={isTrue ? <Navigate to="/Portfolio/covid-project" /> : <Covid />} />
+                        <Route exact path="/covid-project" element={<Covid />} />
                         <Route path="/cc-project" element={<CellCollective />} />
                         <Route path="/automate-project" element={<AutomateExcel />} />
                     </Routes>
