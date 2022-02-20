@@ -1,6 +1,6 @@
 #Biography {
     display: grid;
-    grid-template-columns: 100px 1fr 1fr 100px;
+    grid-template-columns: 100px 1fr 1fr 50px;
     grid-gap: 50px;
     font-family: 'Roboto', sans-serif;
     scroll-margin-top: 100px;
@@ -9,6 +9,37 @@
 
 .content {
     padding: 50px 0;
+}
+
+
+.typing-demo {
+    display: block;
+}
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.8em;
+    font-weight: 700;
+    width: 0;
+    border-right: 1px solid;
+    animation: typing steps(40, end) 3s forwards, 
+                blink 0.75s infinite;
+    
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+    to {
+        width: 100%
+    }
+  }
+      
+@keyframes blink {
+from { border-color: transparent }
+to { border-color: black; }
 }
 
 #img {
@@ -58,10 +89,38 @@ ul li:hover {
 }
 
 
+
+@media screen and (max-width: 1444px) {
+    img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #Biography {
+        grid-template-columns: 5% 30% 50% 15%;
+    }
+
+    .typing {
+        white-space: inherit;
+        animation: none;
+        width: 100%;
+        border: none;
+        overflow: auto;
+    }
+}
+
+
 @media screen and (max-width: 1024px) {
     #Biography {
         display: block;
         text-align: center;
+    }
+
+    .typing {
+        animation: none;
+        width: 100%;
+        border: none;
     }
 
     img {

@@ -21,9 +21,14 @@ export default function Biography() {
             <div className="content">
                 <div className="bio">
                     <div id="content-header">
-                        <h1 id="header">
-                            I am Phillip, a developer and graduate student from Vietnam
-                        </h1>
+                        <div className="typing-demo">
+                            <div className="typing">
+                                I am Phillip, a developer and graduate student from Vietnam
+                            </div>
+                        </div>
+
+
+
                         <div id="description">
                             From a mathematics/computing background, I always have passion with problem solving and collabrating
                             with people, especially when it comes to web and software development. My goal is to improve every
