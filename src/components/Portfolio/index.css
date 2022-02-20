@@ -1,6 +1,5 @@
 #Portfolio {
     display: block;
-    padding: 10px 0;
     height: auto;
     font-family: 'Roboto', sans-serif;
     scroll-margin-top: 100px;
@@ -86,6 +85,11 @@
     transition: all 0.5s ease;
 }
 
+
+#Portfolio footer {
+    padding: 20px 0;
+    
+}
 
 @media screen and (max-width: 1024px) {
     #grid-group {

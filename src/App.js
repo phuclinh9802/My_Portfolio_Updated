@@ -1,16 +1,19 @@
 import './App.css';
 import Landing from './components/Landing/index';
-import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Link, useLocation, Navigate } from "react-router-dom";
 import Navbar from './components/Landing/Navbar';
 import Portfolio from './components/Portfolio';
 
 import { AnimatePresence } from 'framer-motion';
+import Covid from './components/Projects/Covid';
 
 
 
 function App() {
   const location = useLocation();
+  const [isTrue, setTrue] = useState(true);
+
 
   return (
     <div className="App">

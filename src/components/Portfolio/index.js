@@ -11,7 +11,6 @@ import './index.css';
 import AnimatedPage from '../AnimatedPage';
 
 export default function Portfolio() {
-    const [isTrue, setTrue] = useState(true);
 
     return (
         <div id="Portfolio">
@@ -37,19 +36,27 @@ export default function Portfolio() {
                                     <a href={d.link} className="a_hidden">Learn more</a>
                                 </div>
 
+
                             </div>
                         )
                         }
+
                     </div>
                     <Routes>
                         {/* no need to add /Portfolio before any path, since that will navigate to a blank page */}
-                        <Route path="/" element={isTrue ? <Navigate to="/Portfolio/covid-project" /> : <Covid />} />
+                        <Route exact path="/Portfolio" element={<Navigate to="/Portfolio/covid-project" />} />
                         <Route exact path="/covid-project" element={<Covid />} />
                         <Route path="/cc-project" element={<CellCollective />} />
                         <Route path="/automate-project" element={<AutomateExcel />} />
                     </Routes>
+
+
                 </div>
             </AnimatedPage>
+            <div style={{ height: 'calc(20vh)' }}></div>
+            <footer>
+                Copyright &copy; 2022 by Phillip Nguyen. All Rights Reserved.
+            </footer>
 
         </div>
 
