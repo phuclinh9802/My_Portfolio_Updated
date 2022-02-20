@@ -39,3 +39,7 @@ Configure as a single-page app (rewrite all urls to /index.html)? (y/N) y
 npm run build
 firebase deploy
 ```
+
+## Resources:
+- https://iconscout.com/icons
+- https://stackoverflow.com
