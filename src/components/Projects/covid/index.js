@@ -2,6 +2,8 @@ import React from 'react';
 
 import Software from '../../../data/software';
 
+import data from '../../../data/data';
+
 import './index.css';
 
 export default function Covid() {
@@ -11,7 +13,11 @@ export default function Covid() {
         <div className="Covid">
             <div className="covid-wrapper">
                 <div className="title-covid" id="title-c">
-                    <h3>Covid-19 World Tracker</h3>
+                    <h3>
+                        <a href={data[0].link}>
+                            Covid-19 World Tracker
+                        </a>
+                    </h3>
                 </div>
                 <div className="title-covid" id="desc-c">
                     <p>
