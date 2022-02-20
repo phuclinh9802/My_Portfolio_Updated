@@ -70,6 +70,11 @@ export default function Navbar() {
                             setClicked(true)
                         }}>Portfolio</Link>
                     </span>
+                    <span className="hashlink">
+                        <a href="https://phuclinh9802.github.io/resume_pdf/">
+                            My Resume
+                        </a>
+                    </span>
                     <span className="hashlink contact" >
                         <HashLink smooth to="#Contact">Contact</HashLink>
                     </span>
