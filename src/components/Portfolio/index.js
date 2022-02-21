@@ -1,16 +1,20 @@
 import React, { Component, useState } from 'react';
-import { Link, Outlet, } from 'react-router-dom';
+import { Link, Outlet, useLocation, } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Navigate, Route } from 'react-router-dom';
 import data from '../../data/data';
 import CellCollective from '../Projects/CellCollective';
 import AutomateExcel from '../Projects/AutomateExcel';
 import Covid from '../Projects/Covid';
 
+
+
 import './index.css';
 
 import AnimatedPage from '../AnimatedPage';
+import { AnimatePresence } from 'framer-motion';
 
 export default function Portfolio() {
+    const location = useLocation();
 
     return (
         <div id="Portfolio">
@@ -42,13 +46,16 @@ export default function Portfolio() {
                         }
 
                     </div>
-                    <Routes>
-                        {/* no need to add /Portfolio before any path, since that will navigate to a blank page */}
-                        <Route exact path="/Portfolio" element={<Navigate to="/Portfolio/covid-project" />} />
-                        <Route exact path="/covid-project" element={<Covid />} />
-                        <Route path="/cc-project" element={<CellCollective />} />
-                        <Route path="/automate-project" element={<AutomateExcel />} />
-                    </Routes>
+                    <AnimatePresence exitBeforeEnter>
+                        <Routes key={location.pathname} location={location}>
+                            {/* no need to add /Portfolio before any path, since that will navigate to a blank page */}
+                            <Route exact path="/Portfolio" element={<Navigate to="/Portfolio/covid-project" />} />
+                            <Route exact path="/covid-project" element={<Covid />} />
+                            <Route path="/cc-project" element={<CellCollective />} />
+                            <Route path="/automate-project" element={<AutomateExcel />} />
+                        </Routes>
+                    </AnimatePresence>
+
 
 
                 </div>

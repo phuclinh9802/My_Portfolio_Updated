@@ -4,7 +4,7 @@
 
 .Covid {
     display: block; 
-    padding: 50px 0;
+    padding: 50px 30px;
     height: auto;
     font-family: 'Roboto', sans-serif;
     scroll-margin-top: 100px;
@@ -51,7 +51,8 @@
     grid-template-columns: auto auto auto auto;
     grid-gap: 20px;
     padding: 25px;
-    text-align: center;
+    /* text-align: center; */
+    place-items: center;
 }
 
 

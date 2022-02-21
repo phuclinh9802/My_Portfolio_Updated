@@ -12,7 +12,6 @@ import Covid from './components/Projects/Covid';
 
 function App() {
   const location = useLocation();
-  const [isTrue, setTrue] = useState(true);
 
 
   return (

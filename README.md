@@ -21,6 +21,7 @@
     - Portfolio
 
 - Using `framer-motion` package to animate between routes  
+- Using CSS Animation to implement typewriter effect on title
 
 ## Firebase Deployment
 ### Install Firebase npm

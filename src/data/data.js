@@ -19,10 +19,10 @@ const Portfolio = [
         img: '/img/cellcollective.png',
         router: 'cc-project',
         link: 'https://cellcollective.org/',
-        description: `This project is to assist with development of scientific software for data analysis and pathway modeling. Software will be developed in React JS, Javascript, NodeJS, and Python.`
-    }, 
-    
-] 
+        description: `This project is to assist with development of scientific software for data analysis and pathway modeling. Software will be developed in React, NodeJS, Java, and PostgreSQL`
+    },
+
+]
 
 export default Portfolio;
 

@@ -41,7 +41,43 @@ const Software = [
         name: 'AWS',
         img: '/img/software_icons/aws.png'
 
-    }
+    },
+    {
+        id: 8,
+        name: 'Excel',
+        img: '/img/software_icons/excel.png'
+
+    }, {
+        id: 9,
+        name: 'React',
+        img: '/img/software_icons/react.png'
+
+    }, {
+        id: 10,
+        name: 'Node',
+        img: '/img/software_icons/node-js.png'
+
+    }, {
+        id: 11,
+        name: 'Express',
+        img: '/img/software_icons/express.png'
+
+    }, {
+        id: 12,
+        name: 'PostgreSQL',
+        img: '/img/software_icons/postgresql.png'
+
+    }, {
+        id: 13,
+        name: 'docker',
+        img: '/img/software_icons/docker.png'
+
+    }, {
+        id: 14,
+        name: 'gitlab',
+        img: '/img/software_icons/gitlab.png'
+
+    },
 ]
 
 export default Software;

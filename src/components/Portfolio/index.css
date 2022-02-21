@@ -1,13 +1,14 @@
+
 #Portfolio {
     display: block;
     height: auto;
     font-family: 'Roboto', sans-serif;
-    scroll-margin-top: 100px;
     background: #f2f2f2;
+    margin-top: -8px;
 }
 
 .wrapper {
-    padding: 0 20px;
+    padding: 20px 20px;
 }
 
 #title-port {
