@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+.cc {
+    display: block;
+    padding: 50px 30px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cc-wrapper {
+    padding: 0 20px;
+}
+
+.title-cc {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.title-cc h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.title-cc h3 a {
+    color: black;
+    transition: all 0.5s ease-in ;
+}
+
+.title-cc h3 a:hover {
+    color: rgba(141, 13, 13, 0.699);
+}
+
+.description-cc {
+    text-align: center;
+}
+
+.title-cc p {
+    color: #777;
+}
+
+.sw-cc {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    grid-gap: 20px;
+    padding: 25px;
+    
+}
+
+.sw-cc li img.programming {
+    width: 100px; 
+    height: auto;
+    box-shadow: none;
+}

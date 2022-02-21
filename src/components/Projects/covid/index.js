@@ -28,10 +28,17 @@ export default function Covid() {
                     <h3>A. Programming languages, framework, and software used in the project:</h3>
                     <ul className="sw">
                         {
-                            Software.map((s) =>
-                                <li key={s.id}>
-                                    <img className="programming" src={s.img} width="64" height="64" />
-                                </li>
+                            Software.map((s) => {
+                                if (s.id < 8) {
+                                    return (
+                                        <li key={s.id}>
+                                            <img className="programming" src={s.img} width="64" height="64" />
+                                        </li>
+                                    )
+                                }
+
+                            }
+
                             )
                         }
                     </ul>
@@ -51,7 +58,7 @@ export default function Covid() {
                                 keep track of what is going on related to Covid-19 news.
                             </li>
                             <li>
-                            The API's will then be converted to JSON files -> CSV files, then connect to MySQL using Python.
+                                The API's will then be converted to JSON files to CSV files, then connect to MySQL using Python.
                             </li>
                             <li>
                                 .NET Core MVC 3.0 will be the HttpRequestHandler from MySQL database. This framework will also
