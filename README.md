@@ -22,6 +22,8 @@
 
 - Using `framer-motion` package to animate between routes  
 - Using CSS Animation to implement typewriter effect on title
+- Using `mdb-react-ui-kit` to recreate project cards to be more responsive
+    - `object-fit:contain` for mobile and `object-fit:cover` for desktop and laptop
 
 ## Firebase Deployment
 ### Install Firebase npm
